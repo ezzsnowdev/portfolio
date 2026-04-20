@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 300ms ease-in;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+#my-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+#my-header h1 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+#nav-bar ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 1.5rem;
+  gap: 2rem;
+}
+
+#nav-bar ul li:hover a {
+  color: #777;
+}
+
+#nav-bar ul li {
+  padding-bottom: calc(0.5rem);
+  border-bottom: 2px solid transparent;
+}
+
+#nav-bar ul li:hover {
+  border-bottom: 2px solid #777;
+}
+
+/*============= Hero Start ===========*/
+
+#hero-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  height: 83vh;
+
+}
+
+
+.image-cont {
+  width: 400px;
+  height: 400px;
+}
+
+.image-cont img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.info-cont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info-cont p {
+  color: #555;
+}
+
+.info-cont h2 {
+  font-size: 3rem;
+}
+
+.info-cont h3 {
+  font-size: 1.75rem;
+  color: #555;
+}
+
+.btns-cont {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btns-cont a {
+  border: 1px solid #555;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#cv-btn:hover {
+  background-color: #353535;
+  color: #FFF;
+}
+
+#contact-btn {
+  background-color: #353535;
+  color: #FFF;
+}
+
+#contact-btn:hover {
+  background-color: #000;
+}
+
+.social-cont {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-cont a svg {
+  font-size: 32px;
+}
+
+.social-cont a svg.fa-linkedin-in {
+  color: #fff;
+  background-color: #000;
+  font-size: 10px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/*=============== Start About me Sec ===============*/
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0 10rem;
+  padding-top: 25px;
+}
+
+#about-me #about-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about-me #about-head h2 {
+  font-size: 3rem;
+}
+
+
+#about-me .about-body {
+  display: flex;
+  gap: 4rem;
+}
+
+
+
+#about-me .about-img-cont {
+  width: 400px;
+  height: 400px;
+}
+
+#about-me .about-img-cont img {
+  width: -webkit-fill-available;
+  border-radius: 2rem;
+}
+
+#about-me .card-container {
+  display: flex;
+  gap: 2rem;
+}
+
+#about-me .card-container .card-box {
+  flex: 1;
+  border: 1px solid #777;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+#about-me .about-info-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+#about-me .about-info-cont p {
+  color: #353535;
+}
+
+
+
+
+
+
+
+
+
+.border-red {
+  border: 2px solid red;
+}
+
+.border-green {
+  border: 2px solid green;
+}
+
+.border-blue {
+  border: 2px solid blue;
+}
