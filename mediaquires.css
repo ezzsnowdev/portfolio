@@ -1,0 +1,93 @@
+@media (max-width: 1180px) {
+
+  #experience #stacks-cont {
+    flex-direction: column;
+  }
+
+  #experience #stacks-cont .stack-card .tools-cont {
+    justify-content: center;
+  }
+
+}
+
+
+/* Tablet */
+@media (max-width: 778px) {
+  html {
+    font-size: 10px;
+  }
+
+  .section-head h2 {
+    font-size: 2rem;
+  }
+
+  #nav-bar {
+    display: none;
+  }
+
+  #nav-bar-mobile {
+    display: flex;
+  }
+
+
+  #hero-sec {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .image-cont {
+    width: 200px;
+    height: 200px;
+  }
+
+  .info-cont {
+    gap: 1.5rem;
+  }
+
+
+
+  /* Start About me section */
+
+  #about-me {
+    margin: 2rem 3rem;
+  }
+
+  #about-me .about-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  #about-me .about-img-cont {
+    width: 270px;
+    height: 270px;
+  }
+
+  #experience {
+    padding: 0 3rem;
+    padding-top: 25px;
+  }
+
+}
+
+
+
+/* mobile */
+@media (max-width: 320px) {
+
+
+
+  .image-cont {
+    width: 150px;
+    height: 150px;
+  }
+
+
+
+}
+
+@media print {
+  .image-cont {
+    display: none;
+  }
+}
