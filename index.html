@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaquires.css" />
   </head>
   <body>
     <header id="my-header">
@@ -14,8 +15,21 @@
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Experience</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+          <li><a href="./media.html" target="_blank">Media</a></li>
+        </ul>
+      </nav>
+      <nav id="nav-bar-mobile">
+        <div id="hamburger-icon">
+          <i id="open-icon" class="fa-solid fa-bars"></i>
+          <i id="close-icon" class="fa-solid fa-x"></i>
+        </div>
+        <ul id="nav-list-mobile">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -34,7 +48,10 @@
             <a id="contact-btn" href="#contact-us">contact Info</a>
           </div>
           <div class="social-cont">
-            <a href="https://www.linkedin.com/in/abdul-rahmanadel/">
+            <a
+              href="https://www.linkedin.com/in/abdul-rahmanadel/"
+              target="_blank"
+            >
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
             <a href="https://github.com/mrK-infosec/mrK-infosec/">
@@ -43,8 +60,9 @@
           </div>
         </div>
       </section>
+
       <section id="about-me">
-        <div id="about-head">
+        <div class="section-head">
           <p>Get To Know More</p>
           <h2>About Me</h2>
         </div>
@@ -67,7 +85,7 @@
                 <i class="fa-solid fa-graduation-cap"></i>
                 <h3>Education</h3>
                 <p>B.Sc Bachelors Degree</p>
-                </div>
+              </div>
             </div>
 
             <p>
@@ -79,8 +97,193 @@
           </div>
         </div>
       </section>
+
+      <section id="experience">
+        <div class="section-head">
+          <p>Explore My</p>
+          <h2>Experience</h2>
+        </div>
+
+        <div id="stacks-cont">
+          <div class="stack-card">
+            <h3 class="stack-title">Frontend Development</h3>
+            <div class="tools-cont">
+              <div class="tool-box">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h4>HTML</h4>
+                  <p>Experienced</p>
+                </div>
+              </div>
+
+              <div class="tool-box">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h4>CSS</h4>
+                  <p>Experienced</p>
+                </div>
+              </div>
+
+              <div class="tool-box">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h4>SASS</h4>
+                  <p>Experienced</p>
+                </div>
+              </div>
+
+              <div class="tool-box">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h4>Javascript</h4>
+                  <p>Experienced</p>
+                </div>
+              </div>
+
+              <div class="tool-box">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h4>TypeScript</h4>
+                  <p>Basic</p>
+                </div>
+              </div>
+
+              <div class="tool-box">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h4>Material UI</h4>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stack-card">
+            <h3 class="stack-title">Backend Development</h3>
+            <div class="tools-cont">
+              <div class="tool-box">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h4>Postgresql</h4>
+                  <p>Basic</p>
+                </div>
+              </div>
+
+              <div class="tool-box">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h4>Node js</h4>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+
+              <div class="tool-box">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h4>Express JS</h4>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+
+              <div class="tool-box">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h4>Git</h4>
+                  <p>Experienced</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="section-head">
+          <p>Browse My Recent</p>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <img src="./img_avatar.png" alt="project image" />
+            <h3>Appie App</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum at
+              suscipit culpa, nulla vitae ut expedita repellat laudantium fugiat
+              iusto atque reiciendis impedit tempora ipsa dignissimos aut enim
+              nam corporis!
+            </p>
+            <div class="btns-cont">
+              <a id="cv-btn" href="#">Github</a>
+              <a id="cv-btn" href="#">Live demo</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./img_avatar.png" alt="project image" />
+            <h3>Omnifood</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum at
+              suscipit culpa, nulla vitae ut expedita repellat laudantium fugiat
+              iusto atque reiciendis impedit tempora ipsa dignissimos aut enim
+              nam corporis!
+            </p>
+            <div class="btns-cont">
+              <a id="cv-btn" href="#">Github</a>
+              <a id="cv-btn" href="#">Live demo</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img_avatar.png" alt="project image" />
+            <h3>Omnifood</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum at
+              suscipit culpa, nulla vitae ut expedita repellat laudantium fugiat
+              iusto atque reiciendis impedit tempora ipsa dignissimos aut enim
+              nam corporis!
+            </p>
+            <div class="btns-cont">
+              <a id="cv-btn" href="#">Github</a>
+              <a id="cv-btn" href="#">Live demo</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-me">
+        <div class="section-head">
+          <p>Get in Touch</p>
+          <h2>Contact Me</h2>
+        </div>
+
+        <div class="contact-cont">
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="email:abdoadel3337@hotmail.com"
+              >abdoadel3337@hotmail.com</a
+            >
+          </div>
+          <div class="contact-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/abdul-rahmanadel/">Linkedin</a>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <footer>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+        </ul>
+      </nav>
+      <p>Copyright ©2026 AbdulRahman Adel. All Rights Reserved.</p>
+    </footer>
+
     <script src="./js/all.min.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
