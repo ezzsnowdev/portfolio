@@ -5,12 +5,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
+  scroll-behavior: smooth;
 }
 
 
 /* ======== Global Start ============ */
-
+.hidden {
+  display: none;
+}
 
 a {
   text-decoration: none;
@@ -59,6 +61,10 @@ main {
   font-weight: 200;
 }
 
+#hamburger-icon {
+  cursor: pointer;
+}
+
 #nav-bar {
   display: flex;
   align-items: center;
@@ -70,6 +76,16 @@ main {
 
 #nav-bar-mobile svg {
   font-size: 32px;
+}
+
+#nav-bar-mobile ul li {
+  list-style-type: none;
+  color: #353535;
+  font-size: 24px;
+}
+
+#nav-bar-mobile ul li:hover {
+  color: #0b8dad;
 }
 
 #nav-bar ul {
@@ -300,6 +316,11 @@ main {
 #projects {
   padding-top: 100px;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .cards {
@@ -308,6 +329,25 @@ main {
   gap: 2rem;
   flex-wrap: wrap;
 }
+
+#projects .show-more {
+  all: unset;
+  width: 200px;
+  height: 50px;
+  margin-top: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid #0b8dad;
+  text-align: center;
+  color: #0b8dad;
+  transition: all 0.5 ease-in-out;
+  cursor: pointer;
+}
+
+#projects .show-more:hover {
+  background-color: #0b8dad;
+  color: #FFF;
+}
+
 
 .cards .card {
   width: 350px;
@@ -345,7 +385,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 76vh;
+  height: 100vh;
   padding-top: 100px;
   padding: 5rem;
 
@@ -376,6 +416,27 @@ main {
   color: #555;
   border-bottom: 1px solid #555;
 }
+
+
+#contact-me .form-cont {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #a3a3a3;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+#contact-me .form-cont input {
+  height: 40px;
+  padding: 10px;
+}
+
+#contact-me .form-cont textarea {
+  padding: 10px;
+}
+
+
 
 
 /* ====== Footer ======== */

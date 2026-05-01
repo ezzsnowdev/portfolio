@@ -203,51 +203,8 @@
           <h2>Projects</h2>
         </div>
 
-        <div class="cards">
-          <div class="card">
-            <img src="./img_avatar.png" alt="project image" />
-            <h3>Appie App</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum at
-              suscipit culpa, nulla vitae ut expedita repellat laudantium fugiat
-              iusto atque reiciendis impedit tempora ipsa dignissimos aut enim
-              nam corporis!
-            </p>
-            <div class="btns-cont">
-              <a id="cv-btn" href="#">Github</a>
-              <a id="cv-btn" href="#">Live demo</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="./img_avatar.png" alt="project image" />
-            <h3>Omnifood</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum at
-              suscipit culpa, nulla vitae ut expedita repellat laudantium fugiat
-              iusto atque reiciendis impedit tempora ipsa dignissimos aut enim
-              nam corporis!
-            </p>
-            <div class="btns-cont">
-              <a id="cv-btn" href="#">Github</a>
-              <a id="cv-btn" href="#">Live demo</a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./img_avatar.png" alt="project image" />
-            <h3>Omnifood</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum at
-              suscipit culpa, nulla vitae ut expedita repellat laudantium fugiat
-              iusto atque reiciendis impedit tempora ipsa dignissimos aut enim
-              nam corporis!
-            </p>
-            <div class="btns-cont">
-              <a id="cv-btn" href="#">Github</a>
-              <a id="cv-btn" href="#">Live demo</a>
-            </div>
-          </div>
-        </div>
+        <div class="cards" id="project-cards"></div>
+        <button class="show-more">Show more</button>
       </section>
 
       <section id="contact-me">
@@ -267,7 +224,35 @@
             <i class="fa-brands fa-linkedin"></i>
             <a href="https://www.linkedin.com/in/abdul-rahmanadel/">Linkedin</a>
           </div>
+          <!-- <input
+            id="email-input"
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <p id="input-stat">status of input</p> -->
         </div>
+
+        <form class="form-cont">
+          <h2>Send me a message</h2>
+          <label for="name"> Name </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Please enter your name"
+          />
+          <label for="message">Message</label>
+          <textarea
+            type="text"
+            id="message"
+            name="message"
+            placeholder="Please enter your message"
+            rows="4"
+          ></textarea>
+          <button type="submit">send</button>
+        </form>
       </section>
     </main>
 
@@ -284,6 +269,7 @@
     </footer>
 
     <script src="./js/all.min.js"></script>
+    <script src="./data.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
