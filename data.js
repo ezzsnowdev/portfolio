@@ -63,56 +63,29 @@ const portfolioData = {
 
   projects: [
     {
-      title: "Appie App Test 1",
-      image: "./img_avatar.png",
-      imageAlt: "Appie App project image",
+      title: "QR code component",
+      image: "./images/project1.jpg",
+      imageAlt: "QR code component image preview",
       description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum at suscipit culpa, nulla vitae ut expedita repellat laudantium fugiat iusto atque reiciendis impedit tempora ipsa dignissimos aut enim nam corporis!",
+        "A responsive QR code component built with HTML, CSS, to train on building modern and visually appealing web components. It features a clean design and is optimized for various screen sizes, making it a great addition to any project that requires QR code functionality.",
+      githubUrl: "https://github.com/ezzsnowdev/qr-code-component-main",
+      liveUrl: "https://ezzsnowdev.github.io/qr-code-component-main/",
+    },
+    {
+      title: "advice generator app",
+      image: "./images/project2.png",
+      imageAlt: "advice generator app image preview",
+      description:
+        "It's a web application that generates random advice using an API. Users can click a button to receive new advice, making it a fun and interactive way to get daily inspiration or guidance.",
       githubUrl: "#",
       liveUrl: "#",
     },
     {
       title: "Omnifood",
-      image: "./img_avatar.png",
+      image: "./images/project3.png",
       imageAlt: "Omnifood project image",
       description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum at suscipit culpa, nulla vitae ut expedita repellat laudantium fugiat iusto atque reiciendis impedit tempora ipsa dignissimos aut enim nam corporis!",
-      githubUrl: "#",
-      liveUrl: "#",
-    },
-    {
-      title: "Omnifood",
-      image: "./img_avatar.png",
-      imageAlt: "Omnifood project image",
-      description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum at suscipit culpa, nulla vitae ut expedita repellat laudantium fugiat iusto atque reiciendis impedit tempora ipsa dignissimos aut enim nam corporis!",
-      githubUrl: "#",
-      liveUrl: "#",
-    },
-    {
-      title: "Omnifood",
-      image: "./img_avatar.png",
-      imageAlt: "Omnifood project image",
-      description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum at suscipit culpa, nulla vitae ut expedita repellat laudantium fugiat iusto atque reiciendis impedit tempora ipsa dignissimos aut enim nam corporis!",
-      githubUrl: "#",
-      liveUrl: "#",
-    },
-    {
-      title: "Omnifood",
-      image: "./img_avatar.png",
-      imageAlt: "Omnifood project image",
-      description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum at suscipit culpa, nulla vitae ut expedita repellat laudantium fugiat iusto atque reiciendis impedit tempora ipsa dignissimos aut enim nam corporis!",
-      githubUrl: "#",
-      liveUrl: "#",
-    },
-    {
-      title: "Omnifood",
-      image: "./img_avatar.png",
-      imageAlt: "Omnifood project image",
-      description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum at suscipit culpa, nulla vitae ut expedita repellat laudantium fugiat iusto atque reiciendis impedit tempora ipsa dignissimos aut enim nam corporis!",
+        "A fully responsive landing page for a healthy meal subscription service. Built with pure HTML, CSS, and JavaScript — modern design with smooth animations.",
       githubUrl: "#",
       liveUrl: "#",
     },
@@ -123,6 +96,44 @@ const portfolioData = {
     linkedinUrl: "https://www.linkedin.com/in/abdul-rahmanadel/",
   },
 };
+
+// insert skills into our HTML
+
+const stackContEle = document.querySelector("#stacks-cont");
+const skillsData = portfolioData.skills;
+
+function SkillContinerBuilder(skill) {
+  const category = skill.category;
+  const tools = skill.tools;
+  let toolsHTML = "";
+
+  console.log("category:", category);
+
+  tools.forEach((tool) => {
+    toolsHTML += `
+      <div class="tool-box">
+        <i class="fa-solid fa-circle-check"></i>
+        <div>
+          <h4>${tool.name}</h4>
+          <p>${tool.level}</p>
+        </div>
+      </div>
+    `;
+  });
+
+  return `
+    <div class="stack-card">
+      <h3 class="stack-title">${category}</h3>
+      <div class="tools-cont">
+        ${toolsHTML}
+      </div>
+    </div>
+    `;
+}
+
+skillsData.forEach((skill) => {
+  stackContEle.innerHTML += SkillContinerBuilder(skill);
+});
 
 // insert card into our html
 const projectCards = document.querySelector("#project-cards");
@@ -169,3 +180,8 @@ projectsData.forEach((project, index) => {
   //   </div>
   // `
 });
+
+let showMoreBtn2 = document.querySelector("#projects .show-more");
+if (projectsData.length <= 3) {
+  showMoreBtn2.style.display = "none";
+}
